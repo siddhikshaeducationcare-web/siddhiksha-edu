@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --royal-blue: #1e40af;
+  --royal-dark: #172554;
+  --gold: #d97706;
+  --gold-light: #fbbf24;
+  --white: #ffffff;
+  --light-gray: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e40af;
+  border-radius: 3px;
+}
+
+/* Selection */
+::selection {
+  background: #1e40af;
+  color: white;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-royal-700 text-white font-semibold rounded-xl hover:bg-royal-800 transition-all duration-200 shadow-lg hover:shadow-royal-700/30 hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-gold-500 text-white font-semibold rounded-xl hover:bg-gold-600 transition-all duration-200 shadow-lg hover:shadow-gold-500/30 hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-royal-800 transition-all duration-200 hover:-translate-y-0.5;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .section-title {
+    @apply font-montserrat font-bold text-royal-900;
+  }
+
+  .section-eyebrow {
+    @apply inline-block text-sm font-semibold text-gold-600 uppercase tracking-widest mb-3;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #1e40af, #d97706);
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #0f1d3d 0%, #1e3a8a 40%, #1e40af 70%, #1d4ed8 100%);
+  }
+
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-royal-600 focus:border-transparent transition-all duration-200 text-gray-700 placeholder-gray-400 bg-white;
+  }
+
+  .admin-sidebar-link {
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl text-gray-600 hover:bg-royal-50 hover:text-royal-700 transition-all duration-200 font-medium;
+  }
+
+  .admin-sidebar-link.active {
+    @apply bg-royal-700 text-white hover:bg-royal-800 hover:text-white;
+  }
+}
+
+/* Animated gradient border */
+.gradient-border {
+  position: relative;
+  background: white;
+  border-radius: 16px;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #1e40af, #d97706, #1e40af);
+  background-size: 200% 200%;
+  animation: gradientBorder 4s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Star rating */
+.stars {
+  color: #f59e0b;
+}
+
+/* Loading skeleton */
+.skeleton {
+  background: linear-gradient(90deg, #f0f4f8 25%, #e2e8f0 50%, #f0f4f8 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Scroll to top */
+#scroll-top {
+  @apply fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-all duration-300;
+  background: linear-gradient(135deg, #1e40af, #d97706);
+}
+
+/* Mobile menu */
+.mobile-menu {
+  @apply fixed inset-0 z-50 bg-royal-950/95 backdrop-blur-lg flex flex-col;
+}
+
+/* Achievement card ribbon */
+.ribbon {
+  position: absolute;
+  top: -4px;
+  right: 16px;
+  background: linear-gradient(135deg, #d97706, #fbbf24);
+  color: white;
+  padding: 4px 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.4);
+}
+
+/* Print styles */
+@media print {
+  nav, footer, .no-print { display: none !important; }
+}
