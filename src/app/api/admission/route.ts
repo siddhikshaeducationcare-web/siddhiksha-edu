@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
 
     // Send email to institution
     await resend.emails.send({
-      from: "Siddhiksha Education Care <noreply@siddhikshaedu.com>",
+      from: "Siddhiksha Education Care <onboarding@resend.dev>",
       to: INSTITUTION_EMAIL,
       subject: `New Admission Enquiry — ${student_name} (${standard}, ${board})`,
       html: `
@@ -92,7 +92,7 @@ export async function POST(req: NextRequest) {
 
     // Send confirmation to parent
     await resend.emails.send({
-      from: "Siddhiksha Education Care <noreply@siddhikshaedu.com>",
+      from: "Siddhiksha Education Care <onboarding@resend.dev>",
       to: email,
       subject: "Admission Enquiry Received — Siddhiksha Education Care",
       html: `
