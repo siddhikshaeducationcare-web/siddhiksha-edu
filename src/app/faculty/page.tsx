@@ -32,7 +32,7 @@ const faculty = [
   },
   {
     id: "3",
-    name: "Andrew Richard",
+    name: "Andrew Richard Paul",
     qualification: "B.Tech CSE (Cyber Security)",
     experience: "4 Years",
     subject_expertise: "English, Mathematics, Computer Science",
