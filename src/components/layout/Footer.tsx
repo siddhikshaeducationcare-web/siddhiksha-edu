@@ -37,9 +37,9 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-5">
-              <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center">
-                <Image src="/logo.png" alt="Siddhiksha Education Care Logo" width={48} height={48} className="object-contain" />
-              </div>
+              <div className="w-16 h-16 rounded-xl flex items-center justify-center">
+              <Image src="/logo.png" alt="Siddhiksha Education Care Logo" width={64} height={64} className="object-contain" />
+            </div>
               <div>
                 <span className="block font-montserrat font-bold text-xl text-white leading-none">
                   Siddhiksha

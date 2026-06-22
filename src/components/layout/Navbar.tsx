@@ -55,8 +55,8 @@ export function Navbar() {
           <div className="flex items-center justify-between">
             {/* Logo */}
            <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center shadow-lg group-hover:shadow-royal-700/30 transition-all duration-200">
-                <Image src="/logo.png" alt="Siddhiksha Education Care Logo" width={48} height={48} className="object-contain" />
+              <div className="w-16 h-16 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-royal-700/30 transition-all duration-200">
+                <Image src="/logo.png" alt="Siddhiksha Education Care Logo" width={64} height={64} className="object-contain" />
               </div>
               <div>
                 <span
@@ -132,7 +132,7 @@ export function Navbar() {
         <div className="mobile-menu">
           <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
             <Link href="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center">
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center">
                 <GraduationCap className="w-6 h-6 text-white" />
               </div>
               <div>
