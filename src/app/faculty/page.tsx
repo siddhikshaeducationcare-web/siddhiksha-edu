@@ -62,10 +62,10 @@ const faculty = [
   },
   {
     id: "6",
-    name: "S. R. Ajay",
+    name: "Ajay Kumar",
     qualification: "B.Tech CSE",
     experience: "1 Year",
-    subject_expertise: "Basic Mathematics, Science, Social Science",
+    subject_expertise: "Mathematics, Science, Social Science",
     description:
       "Has one year of teaching experience and strong subject knowledge. Helps students understand concepts clearly through effective teaching methods and a student-friendly approach.",
     photo_url: null,
