@@ -88,8 +88,8 @@ export default function AdmissionPage() {
                     </div>
                     <div>
                       <p className="text-white/50 text-xs">Phone</p>
-                      <a href="tel:+91XXXXXXXXXX" className="text-white font-medium text-sm hover:text-gold-300 transition-colors">
-                        +91 XXXXX XXXXX
+                      <a href="tel:+919677170609" className="text-white font-medium text-sm hover:text-gold-300 transition-colors">
+                        +919677170609
                       </a>
                     </div>
                   </div>
@@ -99,8 +99,8 @@ export default function AdmissionPage() {
                     </div>
                     <div>
                       <p className="text-white/50 text-xs">Email</p>
-                      <a href="mailto:info@siddhikshaedu.com" className="text-white font-medium text-sm hover:text-gold-300 transition-colors">
-                        info@siddhikshaedu.com
+                      <a href="mailto:siddhikshaeducationcare@gmail.com" className="text-white font-medium text-sm hover:text-gold-300 transition-colors">
+                        siddhikshaeducationcare@gmail.com
                       </a>
                     </div>
                   </div>
@@ -110,7 +110,7 @@ export default function AdmissionPage() {
                     </div>
                     <div>
                       <p className="text-white/50 text-xs">Location</p>
-                      <p className="text-white font-medium text-sm">Chennai, Tamil Nadu</p>
+                      <p className="text-white font-medium text-sm">Duraiswamy Street, Anakaputhur, Chennai - 600070</p>
                     </div>
                   </div>
                 </div>

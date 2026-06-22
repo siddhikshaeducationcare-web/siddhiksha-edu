@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   GraduationCap,
   MapPin,
@@ -36,8 +37,8 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-5">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-royal-600 to-royal-800 flex items-center justify-center">
-                <GraduationCap className="w-7 h-7 text-white" />
+              <div className="w-12 h-12 rounded-xl overflow-hidden flex items-center justify-center">
+                <Image src="/logo.png" alt="Siddhiksha Education Care Logo" width={48} height={48} className="object-contain" />
               </div>
               <div>
                 <span className="block font-montserrat font-bold text-xl text-white leading-none">
@@ -124,7 +125,7 @@ export function Footer() {
                   <MapPin className="w-4 h-4 text-gold-400" />
                 </div>
                 <span className="text-gray-400 text-sm leading-relaxed">
-                  Chennai, Tamil Nadu, India
+                  Duraiswamy Street, Anakaputhur, Chennai - 600070
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -132,10 +133,10 @@ export function Footer() {
                   <Phone className="w-4 h-4 text-gold-400" />
                 </div>
                 <a
-                  href="tel:+91XXXXXXXXXX"
+                  href="tel:+919677170609"
                   className="text-gray-400 hover:text-white text-sm transition-colors"
                 >
-                  +91 XXXXX XXXXX
+                  +919677170609
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -143,18 +144,18 @@ export function Footer() {
                   <Mail className="w-4 h-4 text-gold-400" />
                 </div>
                 <a
-                  href="mailto:info@siddhikshaedu.com"
+                  href="mailto:siddhikshaeducationcare@gmail.com"
                   className="text-gray-400 hover:text-white text-sm transition-colors"
                 >
-                  info@siddhikshaedu.com
+                  siddhikshaeducationcare@gmail.com
                 </a>
               </li>
             </ul>
 
             <div className="mt-6 p-4 bg-royal-800/50 rounded-xl border border-royal-700/50">
               <p className="text-xs text-gray-400 mb-1">Office Hours</p>
-              <p className="text-sm text-white font-medium">Mon – Sat: 9 AM – 7 PM</p>
-              <p className="text-xs text-gray-400 mt-1">Sunday: 10 AM – 2 PM</p>
+              <p className="text-sm text-white font-medium">Mon – Sat: 6 PM – 9 PM</p>
+              <p className="text-xs text-gray-400 mt-1">Sunday: 10 AM – 9 PM</p>
             </div>
           </div>
         </div>

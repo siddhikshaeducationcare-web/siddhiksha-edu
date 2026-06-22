@@ -47,7 +47,7 @@ export function AdmissionCTA() {
             <ArrowRight className="w-5 h-5" />
           </Link>
           <a
-            href="tel:+91XXXXXXXXXX"
+            href="tel:+919677170609"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 hover:border-white/50 transition-all duration-200 text-base"
           >
             <Phone className="w-5 h-5" />

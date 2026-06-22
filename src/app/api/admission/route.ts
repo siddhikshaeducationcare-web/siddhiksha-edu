@@ -3,7 +3,7 @@ import { createAdminClient } from "@/lib/supabase";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
-const INSTITUTION_EMAIL = process.env.INSTITUTION_EMAIL || "info@siddhikshaedu.com";
+const INSTITUTION_EMAIL = process.env.INSTITUTION_EMAIL || "siddhikshaeducationcare@gmail.com";
 
 export async function POST(req: NextRequest) {
   try {
@@ -135,7 +135,7 @@ export async function POST(req: NextRequest) {
 
             <div style="margin-top: 24px; padding: 16px; background: #fefce8; border-radius: 8px; border: 1px solid #fde68a;">
               <p style="margin: 0; color: #92400e; font-size: 13px;">
-                📞 For immediate assistance, call us at: <strong>+91 XXXXX XXXXX</strong><br>
+                📞 For immediate assistance, call us at: <strong>+91 96771 70609</strong><br>
                 🌐 Visit: <a href="https://siddhikshaedu.com" style="color: #1d4ed8;">siddhikshaedu.com</a>
               </p>
             </div>
