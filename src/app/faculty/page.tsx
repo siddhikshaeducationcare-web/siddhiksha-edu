@@ -25,7 +25,7 @@ const faculty = [
     name: "Gokul Raj. D",
     qualification: "B.E. ECE",
     experience: "4 Years",
-    subject_expertise: "Business Mathematics, Economics, Computer Applications",
+    subject_expertise: "Business Mathematics, Economics, Computer Science",
     description:
       "Has 4 years of teaching experience and was promoted to an administrative role. Actively supports the management in institutional operations and contributes to maintaining a productive learning environment.",
     photo_url: "/faculty/gokulraj.png",
@@ -48,7 +48,7 @@ const faculty = [
     subject_expertise: "Physics, Chemistry, Mathematics",
     description:
       "Has 2 years of teaching experience and is dedicated to helping students understand concepts clearly through effective teaching methods and personalized guidance.",
-    photo_url: null,
+    photo_url: "/faculty/nithiya.png",
   },
   {
     id: "5",
@@ -58,7 +58,7 @@ const faculty = [
     subject_expertise: "Accounts, Commerce, Economics",
     description:
       "Has 2 years of teaching experience and helps students build a strong understanding of commerce and financial concepts through clear explanations and practical learning approaches.",
-    photo_url: null,
+    photo_url: "/faculty/vimal.png",
   },
   {
     id: "6",
@@ -98,7 +98,7 @@ const faculty = [
     subject_expertise: "All Subjects (Grades 1 to 5)",
     description:
       "Has one year of teaching experience and is capable of handling all subjects for Grades 1 to 5. A Montessori-trained teacher, she focuses on building strong foundational skills and providing effective learning support for young learners.",
-    photo_url: null,
+    photo_url: "/faculty/anushri.png",
   },
 ];
 
