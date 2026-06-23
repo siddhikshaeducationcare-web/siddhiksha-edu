@@ -65,7 +65,7 @@ export function HeroSection() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white/80 text-sm font-medium mb-8">
               <div className="w-2 h-2 rounded-full bg-gold-400 animate-pulse" />
-              Admissions Open — 2025-26
+              Admissions Open — 2026-27
             </div>
 
             <h1 className="font-montserrat font-black text-white leading-tight mb-6">
@@ -139,7 +139,7 @@ export function HeroSection() {
                     Our Impact
                   </p>
                   <p className="text-white/50 text-sm">
-                    Academic Excellence Since 2009
+                    Academic Excellence Since 2010
                   </p>
                 </div>
               </div>

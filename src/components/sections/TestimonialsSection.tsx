@@ -8,38 +8,50 @@ import { cn } from "@/lib/utils";
 const testimonials = [
   {
     id: 1,
-    parent_name: "Rajesh Kumar",
-    student_name: "Priya Kumar",
-    standard: "Class 10 (State Board)",
+    student_name: "Prajeen Kumaraswamy",
+    standard: "Class 10 (CBSE) — 2025–26",
     content:
-      "Siddhiksha transformed my daughter's understanding of Mathematics. She went from struggling with basics to scoring 98 in her board exam. The individual attention here is exceptional.",
+      "I really enjoy these classes. The teacher makes tough topics feel easy, and the atmosphere is comfortable. I've improved a lot without feeling stressed, which is the best part ❤️",
     rating: 5,
   },
   {
     id: 2,
-    parent_name: "Lakshmi Devi",
-    student_name: "Arjun Devi",
-    standard: "Class 8 (CBSE)",
+    student_name: "Dhanush Kumar S",
+    standard: "Class 12 (State Board) — 2020–2021",
     content:
-      "The teachers here are incredibly patient and methodical. My son's confidence in Science has grown tremendously. We saw the difference within two months of joining.",
+      "I attribute my growth and the acquisition of necessary life skills to this place. My mentor and Gurunadhar, Mr. Manikandan Sir, consistently serves as an esteemed role model.",
     rating: 5,
   },
   {
     id: 3,
-    parent_name: "Murugesan S.",
-    student_name: "Kavya Murugesan",
-    standard: "Class 12 (State Board)",
+    student_name: "Sabari Vasan",
+    standard: "Class 12 (State Board) — 2025–26",
     content:
-      "My daughter scored district first rank in Tamil! The way they teach literature and grammar here is unlike any other coaching centre. Truly exceptional educators.",
+      "Just as a sculptor shapes a masterpiece, Mani Sir has shaped my life and future. His guidance, patience, and dedication have made a huge difference in my learning journey. I am truly grateful for everything he has done.",
     rating: 5,
   },
   {
     id: 4,
-    parent_name: "Anand Krishnan",
-    student_name: "Rohan Krishnan",
-    standard: "Class 6 (CBSE)",
+    student_name: "Vinoth Kannan K",
+    standard: "Alumni Student & Ex-Admin",
     content:
-      "The regular assessments and parent communication keep us involved in our child's progress. Rohan actually enjoys going to class now — that says everything.",
+      "Special attention for slow learners and continuous support in all subjects is the best part here. The guidance and encouragement provided have been truly valuable throughout my journey.",
+    rating: 5,
+  },
+  {
+    id: 5,
+    student_name: "Lingesh G",
+    standard: "Class 12 (State Board) — 2025–26",
+    content:
+      "This tuition center offers excellent instruction, supported by highly knowledgeable and effective teaching staff. The quality of teaching is consistently outstanding, making learning both engaging and productive. The tuition was especially beneficial during examination periods, where focused revisions, personalized guidance, and special attention greatly improved preparation and performance.",
+    rating: 5,
+  },
+  {
+    id: 6,
+    student_name: "Andrew Richard",
+    standard: "Class 12 (State Board) — 2021–2022 & Current Administration",
+    content:
+      "I've been part of this tuition centre for 4 years, first as a student and later as a staff member. The excellent guidance, supportive staff, and highly motivating atmosphere have played a significant role in my growth. It is truly an unforgettable place that helps you learn, develop, and succeed 🤍",
     rating: 5,
   },
 ];
@@ -94,7 +106,7 @@ export function TestimonialsSection() {
 
         {/* Testimonials */}
         <div className="text-center mb-12">
-          <span className="section-eyebrow">What Parents Say</span>
+          <span className="section-eyebrow">Hear Their Journey</span>
           <h2 className="section-title text-3xl sm:text-4xl mb-4">
             Trusted by Families
           </h2>
@@ -120,14 +132,13 @@ export function TestimonialsSection() {
 
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-royal-700 to-royal-900 flex items-center justify-center text-white font-bold text-lg">
-                {testimonials[current].parent_name[0]}
+                {testimonials[current].student_name[0]}
               </div>
               <div>
                 <p className="font-semibold text-gray-900">
-                  {testimonials[current].parent_name}
+                  {testimonials[current].student_name}
                 </p>
                 <p className="text-gray-500 text-sm">
-                  Parent of {testimonials[current].student_name} —{" "}
                   {testimonials[current].standard}
                 </p>
               </div>

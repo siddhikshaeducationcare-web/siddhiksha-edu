@@ -24,7 +24,7 @@ export function AdmissionCTA() {
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-gold-300 text-sm font-medium mb-6">
-          🎓 Admissions Open — 2025-26 Academic Year
+          🎓 Admissions Open — 2026-27 Academic Year
         </div>
 
         <h2 className="font-montserrat font-black text-white text-4xl sm:text-5xl mb-6 leading-tight">

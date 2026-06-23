@@ -160,7 +160,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="absolute -bottom-4 -right-4 bg-gold-500 text-white rounded-2xl px-4 py-2 shadow-lg text-sm font-bold">
-                ✦ Est. 2009
+                ✦ Est. 2010
               </div>
             </div>
           </div>
