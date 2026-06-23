@@ -29,7 +29,6 @@ const faculty = [
     description:
       "Has 4 years of teaching experience and was promoted to an administrative role. Actively supports the management in institutional operations and contributes to maintaining a productive learning environment.",
     photo_url: "/faculty/gokulraj.png",
-
   },
   {
     id: "3",
@@ -40,7 +39,6 @@ const faculty = [
     description:
       "Has 4 years of teaching experience in English, Mathematics, and Computer Science. Promoted to an administrative role and currently serves as Marketing Manager, contributing to student engagement, institutional growth, and academic excellence.",
     photo_url: "/faculty/andrew.png",
-
   },
   {
     id: "4",
@@ -71,7 +69,6 @@ const faculty = [
     description:
       "Has one year of teaching experience and strong subject knowledge. Helps students understand concepts clearly through effective teaching methods and a student-friendly approach.",
     photo_url: "/faculty/ajay.png",
-
   },
   {
     id: "7",
@@ -82,7 +79,6 @@ const faculty = [
     description:
       "Has one year of teaching experience and is capable of handling all subjects for Grades 8 and 9. Possesses strong subject knowledge and helps students build confidence through clear explanations and effective teaching methods.",
     photo_url: "/faculty/kishore.png",
-
   },
   {
     id: "8",
@@ -93,7 +89,6 @@ const faculty = [
     description:
       "Has one year of teaching experience and is capable of handling all subjects for Grades 6 to 8. He supports students with clear explanations and effective teaching methods. He also serves as the Dance Master of the institution and trains students in dance activities.",
     photo_url: "/faculty/johnpaul.png",
-
   },
   {
     id: "9",
@@ -148,14 +143,17 @@ function FacultyCard({ member }: { member: typeof faculty[0] }) {
       {/* Header */}
       <div className="bg-gradient-to-br from-royal-700 to-royal-900 p-6 text-center relative">
         <div className="w-20 h-20 rounded-2xl overflow-hidden mx-auto mb-3 shadow-lg group-hover:scale-105 transition-transform duration-300 relative">
-  {member.photo_url ? (
-    <Image src={member.photo_url} alt={member.name} fill className="object-cover" />
-  ) : (
-    <div className="w-full h-full bg-white/20 flex items-center justify-center text-white font-black text-3xl font-montserrat">
-      {member.name.split(" ")[0][0]}{member.name.split(" ").slice(-1)[0][0]}
-    </div>
-  )}
-</div>
+          {member.photo_url ? (
+            <Image src={member.photo_url} alt={member.name} fill className="object-cover" />
+          ) : (
+            <div className="w-full h-full bg-white/20 flex items-center justify-center text-white font-black text-3xl font-montserrat">
+              {member.name.split(" ")[0][0]}{member.name.split(" ").slice(-1)[0][0]}
+            </div>
+          )}
+        </div>
+        <h3 className="font-montserrat font-bold text-white text-lg">{member.name}</h3>
+        <p className="text-white/60 text-xs mt-1">{member.qualification}</p>
+      </div>
 
       {/* Body */}
       <div className="p-6">
