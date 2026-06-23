@@ -5,10 +5,9 @@ import {
   MapPin,
   Phone,
   Mail,
-  Facebook,
+  Linkedin,
   Instagram,
   Youtube,
-  Twitter,
   ArrowRight,
 } from "lucide-react";
 
@@ -55,16 +54,18 @@ export function Footer() {
             {/* Social links */}
             <div className="flex items-center gap-3">
               {[
-                { icon: Facebook, href: "#", label: "Facebook" },
-                { icon: Instagram, href: "#", label: "Instagram" },
-                { icon: Youtube, href: "#", label: "YouTube" },
-                { icon: Twitter, href: "#", label: "Twitter" },
+                { icon: Linkedin, href: "https://www.linkedin.com/company/siddhiksha-education-care/", label: "LinkedIn" },
+                { icon: Instagram, href: "https://www.instagram.com/siddhiksha_education_care?igsh=ZXgweGo3Mm90cmM0", label: "Instagram" },
+                { icon: Youtube, href: "https://www.youtube.com/@siddhikshaeducationcare", label: "YouTube" },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-gray-400 hover:bg-royal-700 hover:text-white transition-all duration-200"
+                >
                 >
                   <Icon className="w-4 h-4" />
                 </a>
