@@ -65,7 +65,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   aria-label={label}
                   className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-gray-400 hover:bg-royal-700 hover:text-white transition-all duration-200"
-                >
+             
                 >
                   <Icon className="w-4 h-4" />
                 </a>
