@@ -95,7 +95,7 @@ const faculty = [
     name: "Anu Shri",
     qualification: "B.Com",
     experience: "1 Year",
-    subject_expertise: "All Subjects (Grades 1 to 5)",
+    subject_expertise: "All Subjects (Grades 1 to 5), Accounts",
     description:
       "Has one year of teaching experience and is capable of handling all subjects for Grades 1 to 5. A Montessori-trained teacher, she focuses on building strong foundational skills and providing effective learning support for young learners.",
     photo_url: "/faculty/anushri.png",
