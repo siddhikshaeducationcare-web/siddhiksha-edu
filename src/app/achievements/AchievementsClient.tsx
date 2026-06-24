@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Trophy, GraduationCap, Star, Filter } from "lucide-react";
+import { Trophy, GraduationCap, Filter } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { Achievement } from "@/types";
 
@@ -12,11 +12,10 @@ interface Props {
 
 const filters = [
   { label: "All", value: "all" },
-  { label: "Rank Holders", value: "rank" },
   { label: "State Board", value: "State Board" },
   { label: "CBSE", value: "CBSE" },
-  { label: "2024", value: "2024" },
-  { label: "2023", value: "2023" },
+  { label: "2025-26", value: "2025-26" },
+  { label: "2024-25", value: "2024-25" },
 ];
 
 export function AchievementsClient({ achievements }: Props) {
@@ -24,7 +23,6 @@ export function AchievementsClient({ achievements }: Props) {
 
   const filtered = achievements.filter((a) => {
     if (active === "all") return true;
-    if (active === "rank") return a.is_rank_holder;
     if (active === "State Board" || active === "CBSE") return a.board === active;
     return a.year === active;
   });
@@ -74,37 +72,26 @@ export function AchievementsClient({ achievements }: Props) {
 
 function AchievementCard({ achievement }: { achievement: Achievement }) {
   return (
-    <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all duration-300 relative">
-      {achievement.is_rank_holder && (
-        <div className="ribbon">🏆 {achievement.rank || "Rank Holder"}</div>
-      )}
-
+    <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all duration-300">
       {/* Top gradient */}
       <div className="h-1.5 w-full bg-gradient-to-r from-royal-700 to-gold-500" />
 
       <div className="p-6">
         {/* Avatar */}
         <div className="flex items-center gap-4 mb-4">
-          <div className="relative">
-            {achievement.photo_url ? (
-              <Image
-                src={achievement.photo_url}
-                alt={achievement.student_name}
-                width={56}
-                height={56}
-                className="w-14 h-14 rounded-2xl object-cover"
-              />
-            ) : (
-              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-royal-700 to-royal-900 flex items-center justify-center text-white font-bold text-xl shadow-md">
-                {achievement.student_name[0]}
-              </div>
-            )}
-            {achievement.is_rank_holder && (
-              <div className="absolute -top-1.5 -right-1.5 w-6 h-6 rounded-full bg-gold-500 flex items-center justify-center shadow-sm">
-                <Star className="w-3 h-3 text-white fill-white" />
-              </div>
-            )}
-          </div>
+          {achievement.photo_url ? (
+            <Image
+              src={achievement.photo_url}
+              alt={achievement.student_name}
+              width={56}
+              height={56}
+              className="w-14 h-14 rounded-2xl object-cover"
+            />
+          ) : (
+            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-royal-700 to-royal-900 flex items-center justify-center text-white font-bold text-xl shadow-md">
+              {achievement.student_name[0]}
+            </div>
+          )}
           <div>
             <h3 className="font-montserrat font-bold text-gray-900">
               {achievement.student_name}
@@ -114,7 +101,7 @@ function AchievementCard({ achievement }: { achievement: Achievement }) {
         </div>
 
         {/* Score */}
-        <div className="flex items-center gap-2 mb-3">
+        <div className="flex items-center gap-2 mb-3 flex-wrap">
           <div className="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 font-bold text-sm border border-emerald-100">
             {achievement.marks_percentage}
           </div>
@@ -126,14 +113,9 @@ function AchievementCard({ achievement }: { achievement: Achievement }) {
           </div>
         </div>
 
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+        <p className="text-gray-600 text-sm leading-relaxed">
           {achievement.achievement_description}
         </p>
-
-        <div className="flex items-center gap-2 text-xs text-gray-400">
-          <GraduationCap className="w-3.5 h-3.5" />
-          <span>{achievement.school_name}</span>
-        </div>
       </div>
     </div>
   );
