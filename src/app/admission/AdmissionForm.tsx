@@ -44,8 +44,7 @@ export function AdmissionForm() {
     if (!form.parent_name.trim()) newErrors.parent_name = "Parent name is required";
     if (!form.mobile_number.trim()) newErrors.mobile_number = "Mobile number is required";
     else if (!/^[6-9]\d{9}$/.test(form.mobile_number)) newErrors.mobile_number = "Enter a valid 10-digit mobile number";
-    if (!form.email.trim()) newErrors.email = "Email is required";
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) newErrors.email = "Enter a valid email address";
+    if (form.email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) newErrors.email = "Enter a valid email address";
     if (!form.school_name.trim()) newErrors.school_name = "School name is required";
     if (!form.standard) newErrors.standard = "Please select a class";
     if (!form.board) newErrors.board = "Please select a board";
@@ -134,9 +133,8 @@ export function AdmissionForm() {
         {/* Row 1 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <FormField
-            icon={<User className="w-4 h-4 text-gray-400" />}
-            label="Student Name"
-            required
+            icon={<Mail className="w-4 h-4 text-gray-400" />}
+            label="Email Address (Optional)"
           >
             <input
               type="text"

@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
     } = body;
 
     // Validate required fields
-    if (!student_name || !parent_name || !mobile_number || !email || !school_name || !standard || !board) {
+    if (!student_name || !parent_name || !mobile_number || !school_name || !standard || !board) {
       return NextResponse.json({ error: "All required fields must be filled" }, { status: 400 });
     }
 
@@ -90,10 +90,11 @@ export async function POST(req: NextRequest) {
       `,
     });
 
-    // Send confirmation to parent
-    await resend.emails.send({
-      from: "Siddhiksha Education Care <onboarding@resend.dev>",
-      to: email,
+    // Send confirmation to parent (only if email was provided)
+    if (email) {
+      await resend.emails.send({
+        from: "Siddhiksha Education Care <onboarding@resend.dev>",
+        to: email,
       subject: "Admission Enquiry Received — Siddhiksha Education Care",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -146,12 +147,13 @@ export async function POST(req: NextRequest) {
               "A Place to Learn!"<br>
               Chennai, Tamil Nadu
             </p>
-          </div>
-        </div>
-      `,
-    });
+      </div>
+    </div>
+    `,
+  });
+}
 
-    return NextResponse.json({ success: true, id: admission.id });
+  return NextResponse.json({ success: true, id: admission.id });
   } catch (error) {
     console.error("Admission API error:", error);
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
