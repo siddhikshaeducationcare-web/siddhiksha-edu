@@ -185,8 +185,7 @@ export function AdmissionForm() {
 
           <FormField
             icon={<Mail className="w-4 h-4 text-gray-400" />}
-            label="Email Address"
-            required
+            label="Email Address (Optional)"
           >
             <input
               type="email"
