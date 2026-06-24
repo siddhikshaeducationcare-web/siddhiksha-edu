@@ -133,8 +133,9 @@ export function AdmissionForm() {
         {/* Row 1 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <FormField
-            icon={<Mail className="w-4 h-4 text-gray-400" />}
-            label="Email Address (Optional)"
+            icon={<User className="w-4 h-4 text-gray-400" />}
+            label="Student Name"
+            required
           >
             <input
               type="text"
