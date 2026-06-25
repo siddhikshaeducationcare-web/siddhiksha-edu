@@ -57,9 +57,9 @@ const testimonials = [
 ];
 
 const achievements = [
-  { icon: Trophy, title: "District First Rank", desc: "Tamil — Class 12 State Board 2024", color: "text-gold-500" },
-  { icon: Medal, title: "98.5% in Maths", desc: "Board Exam — Class 10 CBSE 2024", color: "text-royal-600" },
-  { icon: Award, title: "State Board Top 10", desc: "Science — Class 10 2024", color: "text-emerald-600" },
+  { icon: Trophy, title: "97% in CBSE", desc: "Dhiganth Sagar — Class 10, 2024-25", color: "text-gold-500" },
+  { icon: Medal, title: "92% in State Board", desc: "Kanish — Class 12, 2024-25", color: "text-royal-600" },
+  { icon: Award, title: "95% in CBSE", desc: "Sai Prathissh — Class 10, 2025-26", color: "text-emerald-600" },
 ];
 
 export function TestimonialsSection() {
