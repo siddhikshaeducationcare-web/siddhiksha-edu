@@ -6,7 +6,7 @@ import { AdmissionCTA } from "@/components/sections/AdmissionCTA";
 export const metadata: Metadata = {
   title: "Our Alumni",
   description:
-    "Our Pride   Where Our Students Shine Today. Meet the proud alumni of Siddhiksha Education Care who continue to achieve excellence in their academic and professional journeys.",
+    "Our Pride - Where Our Students Shine Today. Meet the proud alumni of Siddhiksha Education Care who continue to achieve excellence in their academic and professional journeys.",
 };
 
 const alumni = [
@@ -69,7 +69,7 @@ export default function AlumniPage() {
             Hall of Fame
           </span>
           <h1 className="font-montserrat font-black text-white text-4xl sm:text-5xl mb-4 leading-tight">
-            Our Pride —
+            Our Pride 
             <br />
             <span className="text-royal-900">Where Our Students Shine Today</span>
           </h1>
