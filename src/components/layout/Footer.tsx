@@ -16,6 +16,7 @@ const quickLinks = [
   { label: "About Us", href: "/about" },
   { label: "Achievements", href: "/achievements" },
   { label: "Faculty", href: "/faculty" },
+  { label: "Alumni", href: "/alumni" },
   { label: "Admission", href: "/admission" },
 ];
 
