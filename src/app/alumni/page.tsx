@@ -6,7 +6,7 @@ import { AdmissionCTA } from "@/components/sections/AdmissionCTA";
 export const metadata: Metadata = {
   title: "Our Alumni",
   description:
-    "Our Pride – Where Our Students Shine Today. Meet the proud alumni of Siddhiksha Education Care who continue to achieve excellence in their academic and professional journeys.",
+    "Our Pride   Where Our Students Shine Today. Meet the proud alumni of Siddhiksha Education Care who continue to achieve excellence in their academic and professional journeys.",
 };
 
 const alumni = [
