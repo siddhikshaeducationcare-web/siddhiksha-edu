@@ -57,23 +57,23 @@ export function Navbar() {
            <Link href="/" className="flex items-center gap-3 group">
               <Image src="/logo.png" alt="Siddhiksha Education Care Logo" width={64} height={64} className="object-contain" />
               <div>
-                <span
-                  className={cn(
-                    "block font-montserrat font-bold text-lg leading-none transition-colors duration-200",
-                    isScrolled || !isHome ? "text-royal-900" : "text-white"
-                  )}
-                >
-                  Siddhiksha
-                </span>
-                <span
-                  className={cn(
-                    "block text-xs font-medium transition-colors duration-200",
-                    isScrolled || !isHome ? "text-gold-600" : "text-gold-300"
-                  )}
-                >
-                  Education Care
-                </span>
-              </div>
+            <span
+              className={cn(
+                "block font-montserrat font-extrabold text-2xl leading-tight tracking-tight transition-colors duration-200",
+                isScrolled || !isHome ? "text-royal-900" : "text-white"
+              )}
+            >
+              Siddhiksha
+            </span>
+            <span
+              className={cn(
+                "block text-sm font-semibold tracking-widest uppercase transition-colors duration-200",
+                isScrolled || !isHome ? "text-gold-600" : "text-gold-300"
+              )}
+            >
+              Education Care
+            </span>
+          </div>
             </Link>
 
             {/* Desktop Nav */}
