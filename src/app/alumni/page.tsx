@@ -82,6 +82,16 @@ const alumni = [
   },
   {
     id: "8",
+    name: "Ajay Baskaran",
+    batch_year: "12th Standard — 2018",
+    qualification: "B.Com & CA",
+    position: "CA Aspirant",
+    company: null,
+    photo_url: null,
+    sec_position: "Faculty (Admin in his last year) — 2018-2023",
+  },
+  {
+    id: "9",
     name: "Hari Parthasarathy",
     batch_year: "12th Standard — 2019",
     qualification: "MBA",
@@ -91,7 +101,7 @@ const alumni = [
     sec_position: null,
   },
   {
-    id: "9",
+    id: "10",
     name: "Rithish J",
     batch_year: "12th Standard — 2019",
     qualification: "BCA",
@@ -101,7 +111,7 @@ const alumni = [
     sec_position: "Faculty — 2019-2020",
   },
   {
-    id: "10",
+    id: "11",
     name: "Sneha T",
     batch_year: "12th Standard — 2020",
     qualification: "MBA",
@@ -111,7 +121,7 @@ const alumni = [
     sec_position: "Faculty — 2020-2021",
   },
   {
-    id: "11",
+    id: "12",
     name: "Gracia Roseline",
     batch_year: "12th Standard — 2020",
     qualification: "MBA",
@@ -121,7 +131,7 @@ const alumni = [
     sec_position: null,
   },
   {
-    id: "12",
+    id: "13",
     name: "Anith Kannan",
     batch_year: "12th Standard — 2020",
     qualification: "MBA",
@@ -131,7 +141,7 @@ const alumni = [
     sec_position: "Faculty — 2015-2020",
   },
   {
-    id: "13",
+    id: "14",
     name: "Nandha Kumaran S",
     batch_year: "12th Standard — 2021",
     qualification: "B.Com (Hons.)",
@@ -141,7 +151,7 @@ const alumni = [
     sec_position: null,
   },
   {
-    id: "14",
+    id: "15",
     name: "Dhanushkumar S",
     batch_year: "12th Standard — 2021",
     qualification: "B.A., B.E.",
@@ -151,7 +161,7 @@ const alumni = [
     sec_position: null,
   },
   {
-    id: "15",
+    id: "16",
     name: "Mohammed Rihaan M",
     batch_year: "12th Standard — 2021",
     qualification: "B.E Automation Engineering",
@@ -161,7 +171,7 @@ const alumni = [
     sec_position: null,
   },
   {
-    id: "16",
+    id: "17",
     name: "Subhiksha Ganesh",
     batch_year: "12th Standard — 2021",
     qualification: "B.Com",
@@ -171,7 +181,7 @@ const alumni = [
     sec_position: null,
   },
   {
-    id: "17",
+    id: "18",
     name: "Indumathi Raman",
     batch_year: "12th Standard — 2021",
     qualification: "BSc Nursing",
@@ -181,7 +191,7 @@ const alumni = [
     sec_position: "Faculty — 2021-2025",
   },
   {
-    id: "18",
+    id: "19",
     name: "Radhika R",
     batch_year: "12th Standard — 2022",
     qualification: "M.Sc Psychology",
@@ -191,7 +201,7 @@ const alumni = [
     sec_position: "Faculty — 2022-2025",
   },
   {
-    id: "19",
+    id: "20",
     name: "Lokesh S",
     batch_year: "12th Standard — 2022",
     qualification: "B.E Cyber Security",
@@ -201,7 +211,7 @@ const alumni = [
     sec_position: "Faculty — 2022-2023",
   },
   {
-    id: "20",
+    id: "21",
     name: "Lokesh Ramaswamy",
     batch_year: "12th Standard — 2023",
     qualification: "B.Com",
